@@ -45,7 +45,5 @@ test('Deve acessar a conta do usuário', async ({ page }) => {
   // temporário
   await page.waitForTimeout(2000)
 
-  expect(await dashPage.getBalance()).toHaveText('R$ 5.000,00')
-
-  await page.waitForTimeout(3000)
+  await expect(await dashPage.getBalance()).toHaveText("R$ 5.000,00")
 });

@@ -7,7 +7,8 @@
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
     "test:debug": "npx playwright test --debug",
-    "codegen": "npx playwright codegen http://paybank-mf-auth:3000/"
+    "codegen": "npx playwright codegen http://paybank-mf-auth:3000/",
+    "test:allure": "npx allure serve"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "@types/node": "^22.13.9"
   },
   "dependencies": {
+    "allure-commandline": "^2.33.0",
+    "allure-playwright": "^3.2.0",
     "bullmq": "^5.40.4",
     "pg-promise": "^11.10.2"
   }
